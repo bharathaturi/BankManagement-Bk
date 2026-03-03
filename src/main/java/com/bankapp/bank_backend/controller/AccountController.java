@@ -21,7 +21,7 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
-    @PostMapping("/register-and-create")
+    @PostMapping("/init-setup")
     public ResponseEntity<?> registerAndCreateAccount(
             @RequestBody com.bankapp.bank_backend.dto.RegisterRequest request) {
         try {
