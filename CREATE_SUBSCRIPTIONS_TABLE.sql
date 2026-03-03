@@ -1,0 +1,12 @@
+USE bankdb;
+
+CREATE TABLE IF NOT EXISTS subscriptions (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    account_number VARCHAR(255) NOT NULL,
+    platform VARCHAR(255) NOT NULL,
+    plan_name VARCHAR(255) NOT NULL,
+    amount DECIMAL(15,2) NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    start_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    end_date DATETIME NOT NULL
+);
